@@ -1,0 +1,10 @@
+h1 Upload New File
+
+p
+  input type="file" fileread="upload.file"
+p
+  textarea ng-model="upload.description" rows="5"
+
+button ng-click="uploadFile()" Upload
+br
+button ng-click="gotoStep('select_file')" Prev

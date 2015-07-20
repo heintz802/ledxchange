@@ -1,0 +1,15 @@
+h1 Select file and manufacturer
+
+div ng-repeat="u in uploads"
+  p
+    span ng-bind="getFileName(u.file.url)"
+    '
+    span ----
+    '
+    span ng-bind="u.id"
+    '
+    button ng-click="importFile(u.id)" Import
+
+button ng-click="gotoStep('new_upload')" Upload New File
+br
+button ng-click="gotoStep('types')" Prev
